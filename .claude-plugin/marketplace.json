@@ -1,0 +1,16 @@
+{
+  "name": "gentle-replies",
+  "owner": { "name": "Ardit", "url": "https://github.com/A-rdit" },
+  "metadata": {
+    "description": "Gentle Replies: Claude's replies with your calls first and nothing lost."
+  },
+  "plugins": [
+    {
+      "name": "gentle-replies",
+      "source": "./plugin",
+      "description": "A quiet check under each long reply, /calm to reshape the last long reply, and /gentle for daily numbers and an off switch. Pairs with the Reply shape rule in rules/CLAUDE.md.",
+      "version": "0.1.0",
+      "category": "productivity"
+    }
+  ]
+}

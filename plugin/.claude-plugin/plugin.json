@@ -1,0 +1,34 @@
+{
+  "name": "gentle-replies",
+  "version": "0.1.0",
+  "description": "Companion to the Reply shape rule: a quiet check under each long reply when a call, a changed file or a failed command is missing, /calm to reshape the last long reply, and /gentle for daily numbers and an off switch.",
+  "author": {
+    "name": "Ardit",
+    "url": "https://github.com/A-rdit"
+  },
+  "homepage": "https://github.com/A-rdit/gentle-replies",
+  "repository": "https://github.com/A-rdit/gentle-replies",
+  "license": "MIT",
+  "keywords": [
+    "replies",
+    "readability",
+    "adhd",
+    "plain-language"
+  ],
+  "userConfig": {
+    "check": {
+      "type": "boolean",
+      "title": "Check each reply",
+      "description": "Under a reply, one quiet line when something looks off: a long reply without the shape, a question outside Your call, a changed file the reply doesn't name, or a failed command it doesn't mention. Nothing shows when all is fine.",
+      "required": false,
+      "default": true
+    },
+    "longWords": {
+      "type": "number",
+      "title": "A reply this many words or longer should use the shape",
+      "description": "Shorter replies stay plain and are only checked for changed files and failed commands.",
+      "required": false,
+      "default": 250
+    }
+  }
+}
